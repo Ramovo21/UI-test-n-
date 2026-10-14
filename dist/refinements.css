@@ -1,0 +1,55 @@
+/* Readable, compact operational views and narrow-screen refinements. */
+.nav-item{font-size:12px}
+.stat-label{font-size:10px}
+.stat-footer{font-size:9px}
+.stat-value{font-size:27px}
+.topbar{height:70px}
+.page-heading{margin-bottom:18px}
+.card-head{padding-top:15px;padding-bottom:12px}
+.compact{font-size:10px}
+.compact td{padding:6px 8px}
+.compact th{font-size:9px;padding:8px}
+.compact td .circle-icon{width:20px;height:20px;border-radius:5px}
+.compact .flex{gap:5px}
+.list-row{padding:9px 0}
+.list-row strong{font-size:11px}
+.list-row small{font-size:10px;line-height:1.55}
+.list-row .badge{font-size:9px}
+.quick{padding:11px 9px}
+.quick strong{font-size:11px}
+.quick small{font-size:9px}
+.patient-table td{padding-top:8px;padding-bottom:8px;font-size:11px}
+.patient-table td .badge{font-size:10px}
+.patient-table th{font-size:10px}
+.chart{height:165px}
+.donut-legend{font-size:10px}
+.table-top-note,.legend{font-size:10px}
+.login-left,.login-right,.login-card,.role-card,.login-form,.field{min-width:0}
+.role-cards{grid-template-columns:repeat(3,minmax(0,1fr))}
+@media(min-width:761px) and (max-width:1200px){
+ .nav-item{font-size:10px}.stat-label{font-size:9px}.stat-footer{font-size:8px}
+ .donut-legend{font-size:9px}.quick strong{font-size:10px}
+ .patient-table{min-width:1120px}
+}
+@media(max-width:760px){
+ .topbar{height:64px}.nav-item{font-size:12px}.stat-label{font-size:9px}
+ .stat-footer{font-size:8px}.stat-value{font-size:24px}.chart{height:180px}
+ .login{grid-template-columns:minmax(0,1fr)}
+ .login .tabs .tab{white-space:normal;font-size:10px;padding:10px 6px}
+ .login .tabs .icon{width:15px;height:15px}
+ .demo-box{padding:13px}.role-card{padding:11px 7px}
+ .role-card .btn{white-space:normal;padding:8px 4px;min-height:36px}
+ .role-card .btn .icon{display:none}.role-card p{min-height:72px}
+ .login-security{flex-wrap:wrap}.login-security span{white-space:nowrap}
+ .patient-option strong{font-size:11px}.patient-table td{font-size:11px}
+ .page-heading .btn{white-space:normal;font-size:10px}
+ .card-head{flex-wrap:wrap}.compact td{font-size:10px}
+ .compact th{font-size:8px}.card-head .search{width:100%}
+ .filter-chip,.icon-btn{min-height:32px}
+}
+@media print{
+ .sidebar,.topbar,.content-footer,.detail-actions,.link,.action-bar,button,form{display:none!important}
+ .shell{margin:0}.main{padding:0}.card{break-inside:avoid;box-shadow:none}
+ body{background:white}.page-heading{margin-top:10px}.grid.cols2{grid-template-columns:1fr 1fr}
+ .timeline-row{padding:7px 0}*{print-color-adjust:exact;-webkit-print-color-adjust:exact}
+}

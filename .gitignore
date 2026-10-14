@@ -1,0 +1,10 @@
+node_modules/
+artifacts/
+*.tar.gz
+*.tgz
+*.log
+.openai/
+.env
+.env.*
+!.env.example
+*.zip
